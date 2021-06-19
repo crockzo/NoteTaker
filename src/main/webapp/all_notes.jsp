@@ -26,7 +26,7 @@
 	<div class="container">
 		<%@include file="navbar.jsp"%>
 		<br>
-		<h1 class="text-uppercase">All Notes:</h1>
+		<h1 class="text-uppercase text-center">All Notes:</h1>
 
 
 		<div class="row">
