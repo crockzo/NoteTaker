@@ -1,8 +1,17 @@
 
+
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 	
-	
+<%
+	System.out.println("I am chcking the session user Attribute : )");
+	if(session.getAttribute("user") == null){
+		System.out.println("I Have not find the session user Attribute : )");
+		response.sendRedirect("login_page.jsp");
+	}
+%>
+
 <%@ page import = "com.helper.*" %>
 <%@ page import = "java.util.*" %>
 <%@ page import = "com.entities.*" %>

@@ -1,4 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+	
+
 <!doctype html>
+	
+<%
+
+	if(session.getAttribute("user") == null){
+		response.sendRedirect("login_page.jsp");
+	}
+%>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -6,12 +18,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Note Taker!</title>
    <%@include file="all_js_css.jsp"%>
+   
   </head>
   <body>
    
 <div class = "container">
 	<%@ include file = "navbar.jsp" %>
-	 <
+	 
 	 
 	 <br>
 
